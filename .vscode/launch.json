@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "node",
+            "program": "${workspaceFolder}/01-syncHook.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        // {
+        //     "name": "启动 Chrome并打开demo.html",
+        //     "type": "chrome",
+        //     "request": "launch",
+        //     "sourceMaps": false,
+        //     "file": "${workspaceRoot}/demo.html"  
+        // }
+    ]
+}
