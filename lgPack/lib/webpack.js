@@ -1,5 +1,5 @@
 const Compiler = require('./Compiler.js')
-const NodeEnvironmentPlugin = require('./NodeEnvironmentPlugin.js')
+const NodeEnvironmentPlugin = require('./node/NodeEnvironmentPlugin.js')
 
 const webpack = function (options) {
 
@@ -10,7 +10,7 @@ const webpack = function (options) {
 	new NodeEnvironmentPlugin().apply(compiler)
 	// 03 挂载所有plugins 插件到compiler对象身上
 	if(options.plugins && Array.isArray(options.plugins)) {
-		if(const plugin of options.plugins) {
+		for(const plugin of options.plugins) {
 			plugin.apply(compiler)
 		}
 	}
@@ -20,3 +20,4 @@ const webpack = function (options) {
 	// 05 返回compiler
 	return compiler
 }
+module.exports = webpack;

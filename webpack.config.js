@@ -9,8 +9,8 @@ module.exports = {
 		path: path.resolve('dist')
 	},
 	plugins: [
-		new HtmlWebpackPlugin({
-			template: './src/index.html'
-		})
+		// new HtmlWebpackPlugin({
+		// 	template: './src/index.html'
+		// })
 	]
 }
