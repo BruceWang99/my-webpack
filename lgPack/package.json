@@ -2,18 +2,14 @@
   "name": "my-webpack",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.js",
+  "main": "./lib/webpack.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "html-webpack-plugin": "^4.5.2",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12"
-  },
   "dependencies": {
-    "tapable": "^2.2.1"
+    "babylon": "^6.18.0",
+    "tapable": "^1.1.3"
   }
 }
